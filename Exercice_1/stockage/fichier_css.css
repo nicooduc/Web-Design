@@ -1,0 +1,254 @@
+/*
+
+MIN - Exercice 1 - TP1
+04/03/2021
+*/
+
+body
+
+/*Propriétés pour le body (Toute la page affichée)*/
+    {
+    width: 900px;
+    /* La largeur de l'élément en pixels */
+    margin: auto;
+    /* La marge de l'élément réglée automatiquement*/
+    padding: 1px;
+    /*écart de remplissage sur les cotés en pixels*/
+    margin-top: 0px;
+    /*La marge de bas de l'élement en pixels*/
+    margin-bottom: 10px;
+    /*La marge du haut de l'élement en pixels*/
+    box-shadow: 0px 0px 10px 5px rgba(132,132,132,0.61);
+
+}
+
+/*==================== Logo EPF ====================*/
+#epf img
+
+/*Propriétés de l'image du logo epf (définie par un id)*/
+    {
+    width: 15%;
+    /* La largeur de l'élément en pourcentage (par rapport au body)*/
+    height: auto;
+    /*La hauteur de l'élément réglée automatiquement*/
+
+}
+
+/*==================== Menu====================*/
+#menu
+
+/*Propriétés pour la div avec l'id menu*/
+    {
+    height: 38px;
+    /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    background-image: url("menu.png");
+    /*Le fond est une image*/
+    background-repeat: no-repeat;
+    /*L'image de fond ne se répète pas*/
+
+}
+
+#image-menu
+
+/*Propriétés pour l'image definie avec un identifiant */
+    {
+    float: left;
+    /*Place l'élement sur le côté gauche de la page*/
+}
+
+#tmenu
+
+/*Propriétés pour le tableau du menu (défini par un identifiant)*/
+    {
+    height: 38px;
+    /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    border-collapse: collapse;
+    /*Fait fusionner les bordures du tableau*/
+    text-align: center;
+    /*Le texte est centré dans les celulles*/
+    font-size: 11px;
+    /*La taille de la police est de 11 pixels*/
+    font-family: "Arial";
+    /*On définit la police de caractère*/
+    color: white;
+    /*La couleur de la police est blanche*/
+
+
+}
+
+tr,
+td
+
+/*Propriétés des lignes et colonnes des tableaux (ici on en a un seul, celui du menu)*/
+    {
+    padding: 0px;
+    /*écart de remplissage sur les cotés en pixels*/
+    height: 38px;
+    /*La hauteur de l'élement en pixels (la même que celle des images)*/
+
+}
+
+.t-text
+
+/*Propriétés des cellules de textes dans le tableau du menu (définies par des classes)*/
+    {
+    padding-right: 10px;
+    /*écart de remplissage sur la droite de l'élément en pixels*/
+    padding-left: 10px;
+    /*écart de remplissage sur la gauche de l'élément en pixels*/
+}
+
+.t-text:hover
+
+/*Propriétés lorsque l'on survole les cellules de textes dans le tableau du menu*/
+    {
+    background-image: url(menu-hover.png);
+    /*Le fond est une image*/
+    /*background-repeat   : no-repeat;*/
+    background-position: right 0% top 0%;
+    /*On la positionne en haut à droite*/
+    cursor: pointer
+        /*Le curseur devient une main*/
+
+}
+
+/*==================== Image nuage====================*/
+#nuage
+
+/*Propriétés de l'image nuage (définie par un identifiant)*/
+    {
+    padding-left: 11px;
+    /*écart de remplissage sur la droite de l'élément en pixels*/
+    padding-top: 3px;
+    /*écart de remplissage sur la gauche de l'élément en pixels*/
+}
+
+/*==================== Corps de la page====================*/
+.titre
+
+/*Propriétés pour les titres des paragraphes (définies par une classe)*/
+    {
+    font-size: 20px;
+    /*La taille de la police en pixels*/
+    margin-bottom: 0px;
+    /*La marge inférieur en pixels*/
+    height: 48px;
+    /*La hauteur de l'élément en pixels*/
+    color: darkcyan;
+    /*La couleur de la police est cyan foncé*/
+}
+
+.titre>img
+
+/*Propriétés pour les images de fils de la classe titre (donc les images dans la classe titre)*/
+    {
+    vertical-align: middle;
+    /*Le texte est aligné verticalement au niveau du milieu de l'image*/
+
+}
+
+.p-contenu
+
+/*Propriétés du premier bloc*/
+    {
+    float: left;
+    /*Place l'élement sur le côté gauche de la page*/
+    padding-left: 14px;
+    /*La marge de gauche en pixels*/
+    font-size: 13.5px;
+    /*La taille de la police est de 11 pixels*/
+    font-family: "Arial";
+    /*On définit la police de caractère*/
+
+}
+
+.contenu
+
+/*Propriétés des blocs*/
+    {
+    float: left;
+    /*Place l'élement sur le côté gauche de la page*/
+    width: 265px;
+    /* La largeur de l'élément en pixels */
+    padding-left: 40px;
+    /*écart de remplissage de gauche en pixels ,afin d'espacé les blocs de textes*/
+    font-size: 13.5px;
+    /*La taille de la police est de 11 pixels*/
+    font-family: "Arial";
+    /*On définit la police de caractère*/
+}
+
+.bouton
+
+/*Propriétes de la classe bouton (image de bouton avec du texte)*/
+    {
+    color: grey;
+    /*La couleur de la police est grise*/
+    float: right;
+    /*Le bouton se situe à droite de son bloc*/
+    background-image: url("button.png");
+    /*On définit l'image de fond*/
+    background-repeat: no-repeat;
+    /*L'image de fond ne se répète pas*/
+    height: 23px;
+    /*Hauteur de l'élement (correspond à la hauteur de l'image en pixels)*/
+    width: 110px;
+    /*Largeur de l'élement (correspond à la largeur de l'image en pixels)*/
+    font-size: 11px;
+    /*On définit la taille de la police en pixels*/
+    text-align: center;
+    /*On centre le texte*/
+    padding-top: 4px;
+    /*écart de remplissage du haut en pixels (afin de centré le texte verticalement)*/
+}
+
+#corps {
+    display: flex;
+}
+
+#agenda {
+    width: 65%;
+    margin-top: 30px;
+    box-shadow: 19px 10px 8px -15px rgba(132,132,132,0.61);
+}
+
+#propos {
+    width: 35%;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+article {
+    width: 90%;
+    color: rgb(86, 150, 150);
+    border-bottom: 1px solid;
+    border-color: lightgray;
+    padding-left: 5px;
+
+}
+
+article > p, .contenu {
+    color :rgb(124, 124, 124);
+    margin: 2px;
+}
+
+article > h2, .contenu{
+    color: darkcyan;
+}
+
+article > h3, .contenu{
+    margin-bottom: 2px;
+    margin-top: 7px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url("footer.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}

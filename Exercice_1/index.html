@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+
+MIN - Exercice 1 - TP1
+04/03/2021
+-->
+<html>
+
+<head>
+  <title>Exercice 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- On associe un fichier CSS qui permet de définir la présentation -->
+  <link rel="stylesheet" type="text/css" title="design" href="stockage/fichier_css.css" />
+  <!-- On  associe une image icone pour l'entête -->
+  <link rel="icon" type="image/png" href="stockage/icone.png" />
+</head>
+
+<body>
+  <!--Logo Epf-->
+  <div id="epf">
+    <img src="stockage/logo_epf_0.png" alt="logo de l'EPF" />
+  </div>
+  <!--Début menu-->
+  <div id="menu">
+    <!--On définit la première image en dehors du tableau (sinon le tableau est trop grand en hauteur) -->
+    <img id="image-menu" src="stockage/home-button.png" alt="bouton home" />
+    <!--Début du tableau menu -->
+    <table id="tmenu">
+      <tr>
+        <!--Les images de séparateur sont dans 1 case sur 2 (pour séparer les textes)-->
+        <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+        <td class="t-text">Intégration HTML</td>
+        <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+        <td class="t-text">CSS</td>
+        <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+        <td class="t-text">JavaScript</td>
+        <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+        <td class="t-text">Php</td>
+        <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+        <td class="t-text">Autres ...</td>
+        <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+      </tr>
+    </table>
+    <!--Fin du tableau menu -->
+  </div>
+  <!--Fin menu-->
+  <!--Image nuage-->
+  <div id="nuage">
+    <img src="stockage/01.jpg" alt="alt" />
+  </div>
+  <!--Début du corps -->
+  <div id="corps">
+    <div class="p-contenu"> <!--Classe du premier "bloc" -->
+      <p class="titre">
+        <img src="stockage/html.jpg" alt="html" />
+        <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
+        Intégration HTML
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
+        Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
+        eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
+      <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
+      <p class="bouton">Voir le TD</p>
+    </div>
+
+    <div class="p-contenu"> <!--Classe du premier "bloc" -->
+      <p class="titre">
+        <img src="stockage/js.jpg" alt="html" />
+        <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
+        Javascript
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
+        Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
+        eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
+      <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
+      <p class="bouton">Voir le TD</p>
+    </div>
+
+    <div class="p-contenu"> <!--Classe du premier "bloc" -->
+      <p class="titre">
+        <img src="stockage/ajax.jpg" alt="html" />
+        <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
+        jQuery & AJAX
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
+        Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
+        eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
+      <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
+      <p class="bouton">Voir le TD</p>
+    </div>
+  </div>
+  <div id="corps">
+    <div id="agenda">
+      <article>
+        <h2>Derniers TDs</h2>
+      </article>
+      <article>
+        <h3>Intégration HTML</h3>
+        <p>20 Octobre 2020</p>
+      </article>
+      <article>
+        <h3>Mise en forme CSS</h3>
+        <p>13 Octobre 2020</p>
+      </article>
+      <article>
+        <h3>Découverte du HTML</h3>
+        <p>6 Octobre 2020</p>
+      </article>
+    </div>
+
+    <div id="propos">
+      <article>
+        <h2>A propos</h2>
+      </article>
+      <article>
+        <p>Site développé par Nicolas DUCHENE dans le cadre des Travaux Dirigés</p>
+      </article>
+    </div>
+  </div>
+  <!--Fin du corps -->
+
+</body>
+<footer>
+  <p></p>
+</footer>
+
+</html>
