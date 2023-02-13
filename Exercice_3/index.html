@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+
+MIN - Exercice 1 - TP1
+04/03/2021
+-->
+<html>
+
+<head>
+    <title>Exercice 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- On associe un fichier CSS qui permet de définir la présentation -->
+    <link rel="stylesheet" type="text/css" title="design" href="stockage/fichier_css.css" />
+    <!-- On  associe une image icone pour l'entête -->
+    <link rel="icon" type="image/png" href="stockage/icone.png" />
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Informations sur un employé</legend>
+            <label for="num_secu">Numéro de sécurité sociale : </label>
+            <input type="number" name="num_secu" id="num_secu" /><br>
+            <label for="nom_prenom">Nom et Prénom : </label>
+            <input type="text" name="nom_prenom" id="nom_prenom" /><br>
+            <label for="age">Age : </label>
+            <input type="number" name="age" id="age" /><br>
+            <label for="salaire">Salaire en DH : </label>
+            <input type="number" name="salaire" id="salaire" /><br>
+            <label for="grade">Grade : </label>
+            <input type="text" name="grade" id="grade" /><br><br>
+            <button type="button" name="Enregister">Enregister</button>
+            <button type="submit" name="Nouveau">Nouveau</button>
+            <button type="submit" name="Erase">Effacer tous les champs</button><br><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Affichage de la base de données</legend>
+            <table>
+                <tr>
+                    <th>Numéro de sécurité sociale</th>
+                    <th>Nom et Prénom</th>
+                    <th>Age</th>
+                    <th>Salaire en DH</th>
+                    <th>Grade</th>
+                </tr>
+            </table><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>

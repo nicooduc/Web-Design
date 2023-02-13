@@ -1,0 +1,30 @@
+form {
+  position: relative;
+}
+
+legend {
+  color: rgb(47, 85, 117);
+  font-weight: bold;
+  font-family:'Arial Narrow Bold';
+}
+
+table {
+  text-align: center;
+}
+
+table td,
+table th {
+  border: 1px solid #FFFFFF;
+  background-color: #A0EE8D;
+  padding: 2px 5px;
+}
+
+label {
+  float: left;
+  width: 200px;
+}
+
+input {
+  background-color: lightgray;
+  border-color: #FFFFFF;
+}
