@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title> TP JavaScript </title>
+    <style>
+        .rainbow {
+            animation: rainbow 2.5s linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rainbow {
+
+            100%,
+            0% {
+                color: rgb(255, 0, 0);
+            }
+
+            8% {
+                color: rgb(255, 127, 0);
+            }
+
+            16% {
+                color: rgb(255, 255, 0);
+            }
+
+            25% {
+                color: rgb(127, 255, 0);
+            }
+
+            33% {
+                color: rgb(0, 255, 0);
+            }
+
+            41% {
+                color: rgb(0, 255, 127);
+            }
+
+            50% {
+                color: rgb(0, 255, 255);
+            }
+
+            58% {
+                color: rgb(0, 127, 255);
+            }
+
+            66% {
+                color: rgb(0, 0, 255);
+            }
+
+            75% {
+                color: rgb(127, 0, 255);
+            }
+
+            83% {
+                color: rgb(255, 0, 255);
+            }
+
+            91% {
+                color: rgb(255, 0, 127);
+            }
+        }
+    </style>
+    <script language="javascript">
+        function Calculer_PrixTTC() {
+            var Champ_Texte_PU;
+            var Champ_Texte_TVA;
+            var Champ_Texte_QT;
+            var Champ_Texte_PTTC;
+            var Prix_Unitaire;
+            var Taux_TVA;
+            var Quantite;
+            var Prix_TTC;
+            Champ_Texte_PU = document.getElementById('PU');
+            Champ_Texte_TVA = document.getElementById('TVA');
+            Champ_Texte_QT = document.getElementById('QT');
+            Champ_Texte_PTTC = document.getElementById('PT');
+            Prix_Unitaire = parseFloat(Champ_Texte_PU.value);
+            Taux_TVA = parseFloat(Champ_Texte_TVA.value);
+            Quantite = parseFloat(Champ_Texte_QT.value);
+            Prix_TTC = (Prix_Unitaire * Quantite) + (Prix_Unitaire * Quantite * Taux_TVA / 100);
+            Champ_Texte_PTTC.value = Prix_TTC;
+        }
+    </script>
+</head>
+
+<body>
+    <fieldset class='demo rainbow'>
+        <legend> Calcul du Prix TTC </legend>
+        Prix unitaire HTC : <br>
+        <input type="text" size="20" id="PU" />
+        <br>
+        Taux TVA : <br>
+        <input type="text" size="20" id="TVA" />
+        <br>
+        Quantité : <br>
+        <input type="text" size="20" id="QT" />
+        <br>
+        <input type="button" value="Calculer" Onclick="Calculer_PrixTTC();" />
+        <br>
+        Prix TTC : <br>
+        <input type="text" size="20" id="PT" />
+    </fieldset>
+</body>
+
+</html>
