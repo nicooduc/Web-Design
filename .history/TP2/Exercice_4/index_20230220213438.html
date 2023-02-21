@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>TP 1 de Web design — Exercice 1</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="main.js"></script>
+	<!--<link rel="icon" href="images/favicon.png" />-->
+</head>
+
+<body>
+	<header>
+		<img src="img/epf_logo_new.png" class="logo-epf" alt="Le logo de l'EPF" height="60">
+		<nav>
+			<menu>
+				<li><a href="#" title="Accueil"><img src="img/house.svg" alt="Une maison stylisée" height="15"></a></li>
+				<li><a href="#">Intégration HTML</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">PHP</a></li>
+				<li><a href="#">Autres</a></li>
+			</menu>
+		</nav>
+	</header>
+	<main>
+		<strong>Composez votre menu</strong><br><br>
+		<div>
+			<p class="blue-text"><strong>Entrée:</strong>
+				<select name="entree" id="IN_ENTREE">
+					<option value="18.00">Bettrave rôties</option>
+					<option value="12.00">Campagnarde</option>
+					<option value="20.00">Pamplemousse et fenouil</option>
+					<option value="12.00">Soupe à l'oignon</option>
+				</select>
+				<strong>Plat:</strong>
+				<select name="plat" id="IN_PLAT">
+					<option value="20.00">Surlonge de boeuf</option>
+					<option value="18.00">Poulet grillé</option>
+					<option value="20.00">Risotto</option>
+					<option value="20.00">Canard laqué</option>
+				</select>
+				<strong>Dessert:</strong>
+				<select name="desert" id="IN_DESSERT">
+					<option value="10.00">Pudding aux dates</option>
+					<option value="12.00">Fondant</option>
+					<option value="5.00">Café noir</option>
+					<option value="12.00">Café glacé</option>
+				</select>
+				<input type="button" value="Choisir" Onclick="Print_Adition();" />
+				<br><br>
+			</p>
+		</div>
+		<br><strong>Montant à payer</strong><br>
+		<div>
+			<p>
+				Entrée :
+				<output id="OUT_ENTREE"></output>
+				<br>Plat :
+				<output id="OUT_PLAT"></output>
+				<br>Dessert :
+				<output id="OUT_DESSERT"></output><br>
+			</p>
+		</div>
+		<br><strong>Total:</strong><br>
+		<output id="OUT_TOTAL"></output>
+	</main>
+</body>
+
+</html>
